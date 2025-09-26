@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#interactive-map {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#plan {
+    width: 30%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.term {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    scroll-margin-top: 20px; /* Важно! Отступ при прокрутке к якорю */
+}
+
+.term img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
