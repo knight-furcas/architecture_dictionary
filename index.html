@@ -4,17 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Архитектурный словарь</title>
-    <link rel="stylesheet" href="rects.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="backToTopBtn" title="Наверх">▲</button>
     <header>
         <h1>Архитектурный словарь. Покрова на Нерли</h1>
     </header>
     <main>
-        <section id="interactive-map">
-            <h2>Интерактивная схема</h2>
+        <h2>Интерактивная схема</h2>
+        
+        <section id="interactive-map" class="tab">
+            
             <!-- Вставьте ваш SVG код сюда -->
-            <object id="plan" type="image/svg+xml" data="pokrova1.svg"></object>
+                <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-1">Южный фасад. Общее</label>
+                
+                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-2">Южный фасад. Детализированное</label>
+                
+                <input id="tab-btn-3" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-3">План (сверху)</label>
+            
+            
+                <div class="tab-content" id="content-1">
+                    <object id="plan" type="image/svg+xml" data="pokrova1.svg"></object>
+                </div>
+                <div class="tab-content" id="content-2">
+                    Содержимое 2...
+                </div>
+                <div class="tab-content" id="content-3">
+                    Содержимое 3...
+                </div>
             <!-- Или просто вставьте код SVG прямо сюда, если он небольшой -->
         </section>
 
@@ -60,6 +81,7 @@
         </section>
     </main>
 
-    <script src="rects.js"></script>
+    <script defer src="Scheme.js"></script>
+    <script defer src="buttonToTop.js"></script>
 </body>
 </html>
