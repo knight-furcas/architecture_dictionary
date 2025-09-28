@@ -9,34 +9,26 @@
 <body>
     <button id="backToTopBtn" title="Наверх">▲</button>
     <header>
-        <h1>Архитектурный словарь. Покрова на Нерли</h1>
+        <h1>Архитектурный словарь</h1>
     </header>
     <main>
-        <h2>Интерактивная схема</h2>
         
         <section id="interactive-map" class="tab">
-            
-            <!-- Вставьте ваш SVG код сюда -->
-                <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
-                <label for="tab-btn-1">Южный фасад. Общее</label>
-                
-                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
-                <label for="tab-btn-2">Южный фасад. Детализированное</label>
                 
                 <input id="tab-btn-3" name="tab-btn" type="radio" value="">
-                <label for="tab-btn-3">План (сверху)</label>
+                <label for="tab-btn-3">Покрова на Нерли</label>
+                
+                <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-1">Успенская церковь в селе Варзуга</label>
             
             
-                <div class="tab-content" id="content-1">
-                    <object id="plan" type="image/svg+xml" data="pokrova1.svg"></object>
-                </div>
-                <div class="tab-content" id="content-2">
-                    Содержимое 2...
-                </div>
                 <div class="tab-content" id="content-3">
-                    Содержимое 3...
+                    <object class="plan" id="pokrova" type="image/svg+xml" data="pictures/pokrova1.svg"></object>
                 </div>
-            <!-- Или просто вставьте код SVG прямо сюда, если он небольшой -->
+                <div class="tab-content" id="content-1">
+                    <object class="plan" id="varzuga" type="image/svg+xml" data="pictures/varzuga_west.svg"></object>
+                </div>
+            
         </section>
 
         <section id="dictionary">
@@ -45,6 +37,48 @@
                 <article id="apsida" class="term"> <!-- У каждого термина уникальный id -->
                     <h3>Апсида (=абсида)</h3>
                     <p>Примыкающий к основному объему здания пониженный выступ полукруглой, граненой либо сложной формы в плане; этим термином почти всегда обозначаются лишь алтарные объемы.</p>
+                </article>
+                
+                <article id="baraban" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Барабан</h3>
+                    <p>Цилиндр или многогранник, завершающий объем здания и обычно увенчанный куполом либо главой.</p>
+                </article>
+                
+                <article id="bochka" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Бочка</h3>
+                    <p>Двускатное покрытие килевидного сечения, расширяющееся над основанием.</p>
+                </article>
+                
+                <article id="vosmerik" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Восьмерик</h3>
+                    <p>Восьмигранный архитектурный объем.</p>
+                </article>
+                
+                <article id="glava" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Глава</h3>
+                    <p>Купольное или многогранное покрытие барабана на культовой постройке.</p>
+                </article>
+                
+                <article id="glavka" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Главка</h3>
+                    <p>Небольшая глава, обычно на шейке.</p>
+                </article>
+                
+                <article id="kresh_srub" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Крещеный сруб</h3>
+                    <p>Сруб - деревянное сооружение без пола, перекрытий, лестниц, дверей, оконных рам, возведенное из горизонтальных брёвен или брусьев. <br>
+                    Крещеный с. имеет форму креста. </p>
+                </article>
+                
+                <article id="krovlya" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Кровля</h3>
+                    <p>Верхний слой крыши.</p>
+                </article>
+                
+                <article id="kupol" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Купол</h3>
+                    <p>1 Свод, поверхность которого образована вращением кривой вокруг вертикали. <br>
+                    2 Сфероидная эллипсоидная или граненая кровля, по силуэту близкая куполу (1).</p>
                 </article>
                 
                 <article id="lopatka" class="term"> <!-- У каждого термина уникальный id -->
@@ -57,14 +91,24 @@
                     <p>Участок стены древнерусского каменного сооружения, ограниченный двумя лопатками, пилонами или башнями.</p>
                 </article>
                 
-                <article id="krovlya" class="term"> <!-- У каждого термина уникальный id -->
-                    <h3>Кровля</h3>
-                    <p>Верхний слой крыши.</p>
+                <article id="runduk" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Рундук</h3>
+                    <p>Крытая площадка наружной лестницы при древнерусском здании. </p>
                 </article>
                 
-                <article id="baraban" class="term"> <!-- У каждого термина уникальный id -->
-                    <h3>Барабан</h3>
-                    <p>Цилиндр или многогранник, завершающий объем здания и обычно увенчанный куполом либо главой.</p>
+                <article id="skat" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Скат</h3>
+                    <p>Наклонная поверхность кровли. </p>
+                </article>
+                
+                <article id="chetverik" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Четверик</h3>
+                    <p>Объем с прямоугольным планом (термин обычно относится к культовым постройкам).</p>
+                </article>
+                
+                <article id="shater" class="term"> <!-- У каждого термина уникальный id -->
+                    <h3>Шатер</h3>
+                    <p>Пирамидальное покрытие с крутыми скатами. </p>
                 </article>
                 
                 <article id="yabloko" class="term"> <!-- У каждого термина уникальный id -->
@@ -72,11 +116,7 @@
                     <p>Сфера под крестом, венчающим храм, либо под металлическим прапором или силуэтной фигурой ангела, в завершении башни.</p>
                 </article>
                 
-                <article id="kupol" class="term"> <!-- У каждого термина уникальный id -->
-                    <h3>Купол</h3>
-                    <p>1 Свод, поверхность которого образована вращением кривой вокруг вертикали. <br>
-                    2 Сфероидная эллипсоидная или граненая кровля, по силуэту близкая куполу (1).</p>
-                </article>
+                
             </div>
         </section>
     </main>
