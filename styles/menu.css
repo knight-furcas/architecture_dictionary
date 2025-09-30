@@ -1,0 +1,132 @@
+/* Кнопка меню */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.menu-toggle:hover {
+    background: #555;
+}
+
+/* Боковое меню */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    transition: left 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f2f2f2;
+    color: black;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Стили меню */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: #e9ecef;
+}
+
+/* Подменю */
+.has-submenu > a::after {
+    content: "▶";
+    float: right;
+    transition: transform 0.3s;
+}
+
+.has-submenu.active > a::after {
+    transform: rotate(90deg);
+}
+
+.submenu {
+    list-style: none;
+    background: #e9ecef;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.has-submenu.active .submenu {
+    max-height: 500px;
+}
+
+.submenu a {
+    padding-left: 40px;
+    background: #e9ecef;
+}
+
+.submenu a:hover {
+    background: #dee2e6;
+}
+
+/* Затемнение фона */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Основной контент */
+.content {
+    padding: 80px 20px 20px 20px;
+    min-height: 100vh;
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#dictionary-div {
+    display: none;
+}
+
+#dictionary-div.active {
+    display: block;
+}
+
+#backToTopBtn {
+    display: none; /* Изначально скрыта */
+    position: fixed; /* Положение фиксируется относительно окна просмотра */
+    bottom: 20px; /* Расстояние от нижнего края */
+    right: 30px; /* Расстояние от правого края */
+    z-index: 99; /* Поверх других элементов */
+    border: none;
+    outline: none;
+    background-color: #878787;
+    color: white;
+    cursor: pointer; /* Указатель мыши */
+    padding: 15px;
+    border-radius: 10px; /* Скругленные углы */
+    font-size: 18px;
+    transition: background-color 0.3s; /* Плавное изменение цвета */
+}
+
+#backToTopBtn:hover {
+    background-color: #333; /* Цвет при наведении */
+}
+
+#interactive-map {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.plan {
+    width: 30%;
+    max-width: 800px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.term {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    scroll-margin-top: 20px; /* Важно! Отступ при прокрутке к якорю */
+}
+
+.term img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tab > input[type="radio"] {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+  display: block;
+}
+
+.tab > label {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  transition: color .15s ease-in-out, border-color .15s ease-in-out;
+  color: #222222;
+  background: 0 0;
+  border-bottom: 0.125rem solid transparent;
+}
+
+.tab > label:hover {
+  border-bottom-color: #000000;
+}
