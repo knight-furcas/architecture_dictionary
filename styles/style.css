@@ -13,12 +13,18 @@ h2 {
     text-align: center;
 }
 
-#dictionary-div {
-    display: none;
+.descr {
+  width: 70%;
 }
 
-#dictionary-div.active {
-    display: block;
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none;
 }
 
 #backToTopBtn {
@@ -42,9 +48,16 @@ h2 {
     background-color: #333; /* Цвет при наведении */
 }
 
-#interactive-map {
+#building-block {
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.text {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .plan {
@@ -81,6 +94,7 @@ h2 {
 
 .tab-content {
   display: none;
+  justify-content: center;
   width: 100%;
   margin-top: 1rem;
 }
