@@ -60,6 +60,14 @@ a:visited {
     margin-bottom: 2rem;
 }
 
+.rastr {
+    max-width: 40%;
+}
+
+.little-text {
+    font-size: 0.8rem;
+}
+
 .plan {
     width: 30%;
     max-width: 800px;
