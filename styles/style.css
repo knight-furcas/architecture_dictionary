@@ -2,7 +2,7 @@ body {
     font-family: sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 20px;
+/*     padding: 20px; */
 }
 
 h1 {
@@ -52,7 +52,7 @@ a:visited {
     z-index: 99; /* Поверх других элементов */
     border: none;
     outline: none;
-    background-color: #878787;
+    background-color: #333;
     color: white;
     cursor: pointer; /* Указатель мыши */
     padding: 15px;
@@ -62,7 +62,7 @@ a:visited {
 }
 
 #backToTopBtn:hover {
-    background-color: #333; /* Цвет при наведении */
+    background-color: #555; /* Цвет при наведении */
 }
 
 #building-block {
@@ -151,4 +151,13 @@ a:visited {
 
 .tab > label:hover {
   border-bottom-color: #000000;
+}
+
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #333;
+    color: white;
 }
