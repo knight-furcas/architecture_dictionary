@@ -19,21 +19,21 @@
             <button class="close-btn" id="closeMenu">×</button>
         </div>
         <ul class="menu">
-            <li><a href="#">Введение</a></li>
+            <li class="link"><a href="#intro" data-section="intro">Введение</a></li>
             <li class="has-submenu">
                 <a href="#">Типы зодчества</a>
                 <ul class="submenu">
-                    <li><a href="#wood" data-section="wood">Деревянное</a></li>
-                    <li><a href="#stone" data-section="stone">Каменное</a></li>
+                    <li class="link"><a href="#wood" data-section="wood">Деревянное</a></li>
+                    <li class="link"><a href="#stone" data-section="stone">Каменное</a></li>
                 </ul>
             </li>
             <li class="has-submenu">
                 <a href="#">Строения по назначению</a>
                 <ul class="submenu">
-                    <li><a href="#">Жилые дома, хоромы</a></li>
-                    <li><a href='#'>Инженерные и хозяйственные сооружения</a></li> 
-                    <li><a href="#temple" data-section="temple">Храмы, монастыри</a></li>
-                    <li><a href="#">Крепости, кремли, стены</a></li>
+                    <li class="link"><a href="#houses" data-section="houses">Жилые дома, хоромы</a></li>
+                    <li class="link"><a href='#'>Инженерные и хозяйственные сооружения</a></li> 
+                    <li class="link"><a href="#temple" data-section="temple">Храмы, монастыри</a></li>
+                    <li class="link"><a href="#">Крепости, кремли, стены</a></li>
                 </ul>
             </li>
         </ul>
@@ -113,7 +113,55 @@
                 </div>
             </section>
         </div>
-    
+        
+        <div id="houses" class="content-section">
+            <header>
+                <h1>Жилые дома и хоромы</h1>
+            </header>
+            <section class="tab">
+                <input checked id="tab-btn-1" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-1"><b>Деревянные</b></label>
+                
+                <input id="tab-btn-2" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-2"><b>Пример Каменного/Кирпичного Дома</b></label>
+                
+                <div class="tab-content" id="content-1">
+                    <div class="text">
+                        <p class="descr">
+                        Наиболее распространненным типом постройки из дерева был жилой дом. Такие здания изнашивались быстрее других сооружений, а потому даже в дореволюционных исследованиях не упоминаются избы старше конца XVIII в. <br>
+                        Чаще всего городской дом представлял собой односрубную четырехстенную избу с сенями. К этим двум элементам зачастую добавлялся третий - холодная "клеть" для хранения имущества и жилья в летнее время. <br> 
+                        В более сложных решениях трехчастных посадских хором XII-XVII вв. по одну строну сеней устраивались горницы ("покои" - спальни): теплые - внизу, летние (они назывались еще "терема") - наверху, а по другую сторону в отдельном срубе - общее помещение для всей семьи, а также для приема гостей - "повалуши" (от др.-р. "повальный" - общий). В подклете размещались подсобные помещения - кухни, кладовые, бани.<br>
+                        Приемы хоромного строения, выработанные в деревянном зодчестве, позднее перешли в каменные здания XVI-XVII вв.
+                        </p>
+                    </div>
+                    <!--<div class="list">
+                        <ol >В зависимости от планировки различались:
+                            <li>Изба-четырехстенок</li>
+                            <li>Изба-пятистенок</li>
+                            <li>Изба-шестистенок</li>
+                            <li>Дом-двор</li>
+                            <li>Дом "кошелем"</li>
+                        </ol>
+                    </div>-->
+                    <h3>
+                    Дворец в Коломенском
+                    </h3>
+                    <div class="picture-center">
+                        <img class="rastr-b" src="pictures/rastr/houses/plan_kolomenskogo.png" />
+                        <p class="little-text">
+                            Дворец в Коломенском. По материалам книги "История русской архитектуры" Пилявского В. И., Тица А. А., Ушакова Ю. С.
+                        </p>
+                    </div>
+                    <div class="text">
+                        <p class="descr">
+                        До нашего времени не дошел ни один дворцовый деревянный комплекс, но документы, рисунки и сохранившийся макет детально знакомят нас с выдающимся произведением дворцовой архитектуры XVII в. - дворцом в селе Коломенском под Москвой. <br>
+                        В cостав Коломенского дворца входили семь хором. Переходы связывали хоромы между собой, а также с подсобными помещениями и дворцовой деревянной церковью. Каждые хоромы состояли из нескольких клетей со своими сенями и крыльцами. Клети хором венчались шатрами, простыми и крещеными бочками, кубами. Фасады и интерьеры были богато украшены росписью и резьбой.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
         <div id="temple" class="content-section">
             <header>
                 <h1>Храмы и монастыри</h1>
@@ -121,11 +169,11 @@
             
             <section id="building-block" class="tab">
             
-                <input checked id="tab-btn-3" name="tab-btn" type="radio" value="">
+                <input id="tab-btn-3" name="tab-btn" type="radio" value="">
                 <label for="tab-btn-3"><b>Покрова на Нерли</b></label>
                 
-                <input id="tab-btn-1" name="tab-btn" type="radio" value="">
-                <label for="tab-btn-1"><b>Успенская церковь в селе Варзуга</b></label>
+                <input id="tab-btn-4" name="tab-btn" type="radio" value="">
+                <label for="tab-btn-4"><b>Успенская церковь в селе Варзуга</b></label>
                 
                 <div class="tab-content" id="content-3">
                     <div class="text"> 
@@ -167,7 +215,7 @@
                     <h2>Интерактивная схема </h2>
                     <object class="plan" id="pokrova" type="image/svg+xml" data="pictures/pokrova1.svg"></object>
                 </div>
-                <div class="tab-content" id="content-1">
+                <div class="tab-content" id="content-4">
                     <object class="plan" id="varzuga" type="image/svg+xml" data="pictures/varzuga_west.svg"></object>
                 </div>
                 
