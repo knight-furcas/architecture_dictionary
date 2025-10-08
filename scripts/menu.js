@@ -27,7 +27,7 @@ class SidebarMenu {
         this.initSubmenus();
         
         // Открытие элементов
-        document.querySelectorAll('.submenu a').forEach(link => {
+        document.querySelectorAll('.link a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
                 const targetSection = link.getAttribute('data-section');
@@ -94,11 +94,14 @@ class SidebarMenu {
         
         // Показываем выбранную секцию
         const targetSection = document.getElementById(sectionId);
-        console.log(sectionId)
-        console.log(targetSection)
         if (targetSection) {
             targetSection.classList.add('active');
         }
+        
+        const inputChecked = targetSection.querySelector('input');
+        if (inputChecked) {
+            inputChecked.checked = true;
+        };
         
         // Обновляем URL без перезагрузки страницы
         history.pushState(null, null, `#${sectionId}`);
