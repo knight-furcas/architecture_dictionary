@@ -77,6 +77,10 @@ a:visited {
     margin-bottom: 2rem;
 }
 
+.list {
+    justify-content: left;
+}
+
 .rastr {
     justify-self: center;
     max-width: 40%;
@@ -135,7 +139,8 @@ a:visited {
 
 #tab-btn-1:checked~#content-1,
 #tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3 {
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4 {
   display: block;
 }
 
