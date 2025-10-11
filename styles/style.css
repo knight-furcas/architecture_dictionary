@@ -83,7 +83,7 @@ a:visited {
 
 .rastr {
     justify-self: center;
-    max-width: 40%;
+    min-width: 600px;
     width: 40%;
 }
 
