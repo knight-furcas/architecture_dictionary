@@ -35,9 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         const clickedElement = event.currentTarget;
                         const targetId = clickedElement.id;
                         
-                        console.log('Клик по группе:', targetId);
-                        console.log('Конкретный элемент:', event.target);
-                        
                         // Прокрутка к термину в словаре
                         const targetTerm = document.getElementById(targetId);
                         if (targetTerm) {

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 // Получаем кнопку
     var backToTopBtn = document.getElementById("backToTopBtn");
-    console.log(backToTopBtn);
 
     // Когда пользователь прокручивает страницу вниз на 20px, показать кнопку
     window.onscroll = function() {scrollFunction()};

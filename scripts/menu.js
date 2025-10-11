@@ -23,6 +23,8 @@ class SidebarMenu {
             this.closeMenuHandler();
         });
         
+        this.showSection('intro');
+        
         // Обработка подменю
         this.initSubmenus();
         
