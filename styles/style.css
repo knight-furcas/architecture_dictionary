@@ -17,6 +17,12 @@ h3 {
     text-align: center;
 }
 
+
+#wood-modal {
+    justify-self: center;
+    width: 70%;
+}
+
 .descr {
   width: 70%;
 }
