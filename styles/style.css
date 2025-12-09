@@ -17,6 +17,10 @@ h3 {
     text-align: center;
 }
 
+ol {
+    width: 70%;
+}
+
 .pictures-svg-modal {
     justify-self: center;
     width: 70%;
@@ -39,6 +43,14 @@ a:link {
 a:visited {
     color: grey;
     text-decoration: none;
+}
+
+div:has(> blockquote) {
+  background-color: #ededed;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+  width: 70% 
 }
 
 .content-section {
@@ -79,7 +91,7 @@ a:visited {
     display: flex;
     text-align: justify;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .list {
